@@ -1,0 +1,6 @@
+API :
+cd C:\Users\adalc\OneDrive\Documents\Pro\Alternance\projets\Projet 7\Chardon_Allan_3_dossier_code_012026\API
+
+
+INTERFACE STREMLIT :
+cd C:\Users\adalc\OneDrive\Documents\Pro\Alternance\projets\Projet 7\Chardon_Allan_3_dossier_code_012026\Streamlit
