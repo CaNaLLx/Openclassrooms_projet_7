@@ -45,7 +45,7 @@ def nettoyer_texte(texte):
 
 @app.get("/")
 def read_root():
-    return {"message": "Bienvenue sur l'API nommée Air Paradis. Utilisez /predict pour analyser un tweet."}
+    return {"message": "Bienvenue sur l'API Air Paradis. Utilisez /predict pour analyser un tweet."}
 
 @app.post("/predict")
 def predict_sentiment(input_data: TweetInput):
