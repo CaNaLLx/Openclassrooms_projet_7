@@ -8,10 +8,10 @@ import pickle
 import numpy as np
 import re
 import nltk
-nltk.download('stopwords')
+"""nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
-nltk.download('punkt_tab')
+nltk.download('punkt_tab')"""
 
 from services.LSTM_service import LSTMService
 
