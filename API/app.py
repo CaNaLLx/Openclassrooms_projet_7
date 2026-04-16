@@ -10,6 +10,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
+
 # Variable globale pour le modèle (chargé au premier appel)
 model = None
 
