@@ -15,22 +15,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install dependencies into antenv
+      - name: Zip the app (sans venv)
         run: |
           cd API
-          python -m venv antenv
-          source antenv/bin/activate
-          pip install -r requirements.txt
-
-      - name: Zip the app
-        run: |
-          cd API
-          zip -r ../app.zip .
+          zip -r ../app.zip . -x "antenv/*" "__pycache__/*" "*.pyc" ".venv/*"
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2

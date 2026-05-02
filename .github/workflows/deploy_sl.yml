@@ -1,4 +1,4 @@
-name: Deploy API to Azure
+name: Deploy StreamLit to Azure
 
 on:
   push:
