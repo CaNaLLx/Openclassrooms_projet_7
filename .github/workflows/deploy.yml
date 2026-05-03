@@ -15,10 +15,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Zip the app (sans venv)
+      - name: Zip the app (sans venv ni cache)
         run: |
           cd API
-          zip -r ../app.zip . -x "antenv/*" "__pycache__/*" "*.pyc" ".venv/*"
+          zip -r ../app.zip . -x "antenv/*" "__pycache__/*" "*.pyc" ".venv/*" "venv/*" "tests/__pycache__/*"
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
